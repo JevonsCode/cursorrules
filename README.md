@@ -29,7 +29,7 @@
 ### 样式规范
 
 1. [Mandatory] 预处理器:
-   - SCSS/SASS (Dart Sass ≥1.69.0)
+   - SCSS/SASS 最新版本
 
 2. [Restricted] 禁止属性:
    - gap (flex)

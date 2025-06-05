@@ -1,44 +1,26 @@
-## 语言
+# Language
+language.default = zh-CN
 
-Always respond in Chinese-simplified
+# Frontend
+frontend.language.priority = TypeScript > JavaScript (ES6+)
+frontend.framework.vue.version = latest
+frontend.framework.react.version = latest
+frontend.packageManager = pnpm@latest
 
-## 技术栈规范
+# Backend
+backend.runtime = Node.js@latest
+backend.database = MongoDB@latest
+backend.framework.priority = Node related frameworks
 
-通用规范：注释方法变量用 /** */ 注释，注释逻辑，在逻辑代码之上写 // , 不要写在同行
+# Style
+style.preprocessor = SCSS|SASS@latest
+style.properties.restricted = gap, non-standard vendor prefixes
 
-### 前端开发
+# Tooling
+tool.dependencyManager = pnpm@latest
+tool.builder.recommended = Vite@latest
 
-1. [Mandatory] 语言选择优先级:
-   - TypeScript (TS) > JavaScript (ES6+)
-   - 框架版本:
-     • Vue 最新版本
-     • React 最新版本
-
-2. [Recommended] 包管理器:
-   - 优先使用 pnpm 最新版本
-
-### 后端开发
-
-1. [Mandatory] 基础架构:
-   - Node.js 最新版本
-   - MongoDB 最新版本
-
-2. [Recommended] 框架选择:
-   - Node 相关框架
-
-### 样式规范
-
-1. [Mandatory] 预处理器:
-   - SCSS/SASS 最新版本
-
-2. [Restricted] 禁止属性:
-   - gap (flex)
-   - 非标准厂商前缀
-
-### 工具链配置
-
-1. [Mandatory] 依赖管理:
-   - pnpm 最新版本
-
-2. [Recommended] 构建工具:
-   - Vite 最新版本
+# Comment Rules
+comment.variables = /** variableName: 类型 - 描述 */
+comment.methods = /** 方法说明 - 参数/返回值等 */
+comment.logic = // 逻辑说明（位于逻辑上方）

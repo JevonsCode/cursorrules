@@ -1,0 +1,38 @@
+// Language
+language.default = 'zh-CN';
+
+// Frontend
+frontend.language.priority = 'TypeScript > JavaScript (ES6+)';
+frontend.framework.vue.version = 'latest';
+frontend.framework.react.version = 'latest';
+frontend.packageManager = 'pnpm@latest';
+
+// Backend
+backend.runtime = 'Node.js@20';
+backend.database = 'MongoDB@latest';
+backend.framework.priority = 'Node related frameworks';
+
+// Style
+style.preprocessor = 'less@latest';
+style.properties.restricted = ['gap', 'non-standard vendor prefixes'];
+
+// Tooling
+tool.dependencyManager = 'pnpm@latest';
+tool.builder.recommended = 'Vite@latest';
+
+// SEO Guidelines (Only when there is a 'head' tag in the .html or .art file, then make the modification.)
+seo.page.title.required = true;
+seo.page.title.maxLength = 60;
+seo.page.metaDescription.required = true;
+seo.page.metaDescription.maxLength = 160;
+seo.page.canonicalURL.required = true;
+seo.page.headings.structure = 'only-one-h1-per-page';
+seo.page.images.altAttribute.required = true;
+seo.page.links.descriptiveAnchorText = true;
+seo.page.schemaMarkup.recommended = true;
+seo.page.openGraph.required = true;
+
+// Comment Rules
+comment.variables = '/** variableName: 类型 - 描述 */';
+comment.methods = '/** 方法说明 - 参数/返回值等 */';
+comment.logic = '// 逻辑说明（位于逻辑上方）';
